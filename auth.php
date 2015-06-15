@@ -262,6 +262,15 @@ class auth_plugin_casattras extends auth_plugin_base {
     }
 
     /**
+    * Hook for logging in from a protected page.
+    * This shouldn't be called from the login page, but the process is the same so calling loginpage_hook().
+    *
+    */
+    public function pre_loginpage_hook() }
+        loginpage_hook();
+    }
+
+    /**
      * Hook for overriding behaviour of login page.
      * This method is called from login/index.php page for all enabled auth plugins.
      *
