@@ -266,7 +266,7 @@ class auth_plugin_casattras extends auth_plugin_base {
     * This shouldn't be called from the login page, but the process is the same so calling loginpage_hook().
     *
     */
-    public function pre_loginpage_hook() }
+    public function pre_loginpage_hook() {
         loginpage_hook();
     }
 
